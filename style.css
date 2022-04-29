@@ -1,11 +1,209 @@
+body{
+    font-family: sans-serif;
+    border-top: 10px solid cadetblue;
+    position: relative;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header{
+    background-color: whitesmoke;
+    padding: 20px 40px;
+}
+
+nav{
+    font-size: 18px;
+}
+
+aside {
+    background-color: whitesmoke;
+    border-top: 5px solid cadetblue;
+    border-bottom: 5px solid cadetblue;
+    padding: 50px 40px;
+  }
+
+h1, h2, h3{
+    color: cadetblue;
+} 
+
 h1{
     font-size: 26px;
-    font-family: sans-serif;
     text-transform: uppercase;
     font-style: italic;
 }
 
-p{
-    color: cadetblue;
-    font-weight: bold;
+h2 {
+    font-size: 40px;
+
+    position: relative;
 }
+
+h2::before {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+  }
+  
+
+  
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    font-size: 20px;
+    font-size: 20px;
+    margin-bottom: 10px; /* add space between list items */
+}
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#copyright {
+    font-size: 16px;
+}
+
+.related {
+    list-style: none;
+}
+
+.related-author {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+} 
+
+.related-link:link {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Styling links LVHA*/
+a:link {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+
+button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    /* top: 50px;
+    left: 50px; */
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/*FLEX BOX*/
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .author-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+   
+  .author {
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+   
+  .related-post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+   
+  .related-link:link {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+    display: block;
+  }
+   
+  .related-author {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  /* FLEXBOX LAYOUT */
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+    margin-bottom: 60px;
+  }
+   
+  article {
+    flex: 1;
+    margin-bottom: 0;
+  }
+   
+  aside {
+    /*DEFAULTS:
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;*/
+   
+    flex: 0 0 300px;
+  }
+  
+
